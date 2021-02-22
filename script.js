@@ -9,9 +9,11 @@ function calculator () {
   // radius is just half of the diameter
   const radius = diameter / 2
   // the formula below is for area and displays the answer for area
-  const area = radius ** 2 * Math.PI
+  let area = radius ** 2 * Math.PI
+  area = Math.round(area)
   document.getElementById('result').innerHTML = 'Your Area is: ' + area
   // the formula below is for circumference and displays the answer for circumference
-  const circumference = radius * 2 * Math.PI
+  let circumference = radius * 2 * Math.PI
+  circumference = Math.round(circumference)
   document.getElementById('answer').innerHTML = 'Your Circumference is: ' + circumference
 }
